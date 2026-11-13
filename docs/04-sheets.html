@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>บทที่ 4 · Google Sheets — Digital Literacy by Prymania</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600;700&family=Bai+Jamjuree:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/dl.css">
+<script>document.documentElement.classList.add("js");try{if(localStorage.getItem("side-collapsed")==="1")document.documentElement.classList.add("side-collapsed");if(localStorage.getItem("big-text")==="1")document.documentElement.classList.add("big-text");if(localStorage.getItem("dark")==="1")document.documentElement.classList.add("dark")}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#lesson-content">ข้ามไปเนื้อหา</a>
+<div class="lesson-shell">
+<button class="side-show" type="button" aria-label="แสดงเมนูบทเรียน">☰ เมนู</button>
+<aside class="lesson-sidebar" aria-label="เมนูบทเรียน">
+  <button class="side-hide" type="button" aria-label="ซ่อนเมนู" title="ซ่อนเมนู">«</button>
+  <a class="lesson-brand" href="index.html"><span class="brand-mark" aria-hidden="true">D</span><span><span class="brand-title">Digital Literacy<br>by Prymania</span><span class="brand-caption">ทักษะและชีวิตดิจิทัล · GE</span></span></a>
+<button class="nav-toggle" type="button" aria-expanded="false">☰ สารบัญทุกบท</button>
+<nav class="course-nav" aria-label="สารบัญรายวิชา">
+<p class="nav-label">ครึ่งแรก · เครื่องมือดิจิทัล</p>
+<details class="nav-chapter" name="course-nav"><summary><span class="nav-number">01</span><a class="nav-title" href="01-intro.html">รู้จัก Digital Literacy</a></summary><div class="nav-topics"><a href="01-intro.html#s1"><span class="toc-number">1.1</span>Digital Literacy คืออะไร</a><a href="01-intro.html#s2"><span class="toc-number">1.2</span>คอมพิวเตอร์พื้นฐานแบบเข้าใจง่าย</a><a href="01-intro.html#s3"><span class="toc-number">1.3</span>ไฟล์ โฟลเดอร์ และคลาวด์</a><a href="01-intro.html#s4"><span class="toc-number">1.4</span>Web Browser ใช้ให้คล่อง</a><a href="01-intro.html#s5"><span class="toc-number">1.5</span>แก้ปัญหาเบื้องต้นด้วยตัวเอง</a><a href="01-intro.html#review"><span class="toc-number">💭</span>คำถามชวนคิดท้ายบท</a></div></details>
+<details class="nav-chapter" name="course-nav"><summary><span class="nav-number">02</span><a class="nav-title" href="02-docs.html">Google Docs</a></summary><div class="nav-topics"><a href="02-docs.html#s1"><span class="toc-number">2.1</span>เริ่มต้น Google Docs</a><a href="02-docs.html#s2"><span class="toc-number">2.2</span>Styles: ความลับของเอกสารสวย</a><a href="02-docs.html#s3"><span class="toc-number">2.3</span>ทำงานร่วมกัน: แชร์ คอมเมนต์ แนะนำ</a><a href="02-docs.html#s4"><span class="toc-number">2.4</span>ทริกเล็ก ๆ ที่ประหยัดเวลา</a><a href="02-docs.html#assign"><span class="toc-number">📌</span>Assignment</a><a href="02-docs.html#review"><span class="toc-number">💭</span>คำถามชวนคิดท้ายบท</a></div></details>
+<details class="nav-chapter" name="course-nav"><summary><span class="nav-number">03</span><a class="nav-title" href="03-forms.html">Google Forms</a></summary><div class="nav-topics"><a href="03-forms.html#s1"><span class="toc-number">3.1</span>เริ่มต้น Google Forms</a><a href="03-forms.html#s2"><span class="toc-number">3.2</span>ประเภทคำถามพื้นฐาน</a><a href="03-forms.html#s3"><span class="toc-number">3.3</span>ประเภทคำถามและฟีเจอร์ขั้นสูง</a><a href="03-forms.html#s4"><span class="toc-number">3.4</span>ทำแบบสอบถามให้ได้ข้อมูลจริง</a><a href="03-forms.html#s5"><span class="toc-number">3.5</span>โหมดแบบทดสอบ (Quiz) ตรวจให้อัตโนมัติ</a><a href="03-forms.html#assign"><span class="toc-number">📌</span>Assignment</a><a href="03-forms.html#review"><span class="toc-number">💭</span>คำถามชวนคิดท้ายบท</a></div></details>
+<details class="nav-chapter" name="course-nav" open><summary aria-current="page"><span class="nav-number">04</span><a class="nav-title" href="#lesson-content">Google Sheets</a></summary><div class="nav-topics"><a href="#s1"><span class="toc-number">4.1</span>รู้จักหน้าตา Sheets</a><a href="#s2"><span class="toc-number">4.2</span>ตัวอย่างการทำงาน: ข้อมูลนิสิต</a><a href="#s3"><span class="toc-number">4.3</span>ฟังก์ชันตัดเกรด IF / IFS</a><a href="#s4"><span class="toc-number">4.4</span>สรุปฟังก์ชันสำคัญ</a><a href="#s5"><span class="toc-number">4.5</span>จัดการข้อมูลให้อ่านง่าย</a><a href="#s6"><span class="toc-number">4.6</span>สร้างกราฟให้ข้อมูลเล่าเรื่อง</a><a href="#assign"><span class="toc-number">📌</span>Assignment</a><a href="#review"><span class="toc-number">💭</span>คำถามชวนคิดท้ายบท</a></div></details>
+<details class="nav-chapter" name="course-nav"><summary><span class="nav-number">05</span><a class="nav-title" href="05-presentation.html">Presentation</a></summary><div class="nav-topics"><a href="05-presentation.html#s1"><span class="toc-number">5.1</span>เริ่มจากเรื่อง ไม่ใช่จากสไลด์</a><a href="05-presentation.html#s2"><span class="toc-number">5.2</span>ออกแบบสไลด์ให้คนอยากดู</a><a href="05-presentation.html#s3"><span class="toc-number">5.3</span>Google Slides ทำงานร่วมกัน</a><a href="05-presentation.html#s4"><span class="toc-number">5.4</span>พูดนำเสนอให้มั่นใจ</a><a href="05-presentation.html#assign"><span class="toc-number">📌</span>Assignment</a><a href="05-presentation.html#review"><span class="toc-number">💭</span>คำถามชวนคิดท้ายบท</a></div></details>
+<details class="nav-chapter" name="course-nav"><summary><span class="nav-number">06</span><a class="nav-title" href="06-media.html">Media</a></summary><div class="nav-topics"><a href="06-media.html#s1"><span class="toc-number">6.1</span>เล่าเรื่องก่อนถ่าย</a><a href="06-media.html#s2"><span class="toc-number">6.2</span>ถ่ายด้วยมือถือให้ดูโปร</a><a href="06-media.html#s3"><span class="toc-number">6.3</span>เครื่องมือตัดต่อและ AI ช่วยผลิตสื่อ</a><a href="06-media.html#s4"><span class="toc-number">6.4</span>ลิขสิทธิ์และ Creative Commons</a><a href="06-media.html#assign"><span class="toc-number">📌</span>Assignment</a><a href="06-media.html#review"><span class="toc-number">💭</span>คำถามชวนคิดท้ายบท</a></div></details>
+<p class="nav-label">ครึ่งหลัง · ฉลาดรู้ดิจิทัล</p>
+<details class="nav-chapter" name="course-nav"><summary><span class="nav-number">07</span><a class="nav-title" href="07-ai.html">AI for Students</a></summary><div class="nav-topics"><a href="07-ai.html#s1"><span class="toc-number">7.1</span>AI ช่วยนิสิตได้ 4 ด้าน</a><a href="07-ai.html#s2"><span class="toc-number">7.2</span>เลือกใช้ AI ให้ตรงงาน</a><a href="07-ai.html#s3"><span class="toc-number">7.3</span>เขียน Prompt ให้ AI ตอบตรงใจ</a><a href="07-ai.html#s4"><span class="toc-number">7.4</span>ข้อควรระวัง (Ethics &amp; Limitations)</a><a href="07-ai.html#s5"><span class="toc-number">7.5</span>ลองใช้จริง (Demonstration)</a><a href="07-ai.html#review"><span class="toc-number">💭</span>คำถามชวนคิดท้ายบท</a><a href="07-ai.html#quiz"><span class="toc-number">📝</span>เก็บคะแนนท้ายชั่วโมง</a></div></details>
+<details class="nav-chapter" name="course-nav"><summary><span class="nav-number">08</span><a class="nav-title" href="08-search.html">ค้นหาเก่ง & เช็กก่อนเชื่อ</a></summary><div class="nav-topics"><a href="08-search.html#s1"><span class="toc-number">8.1</span>ทำไมการค้นหาจึงสำคัญ</a><a href="08-search.html#s2"><span class="toc-number">8.2</span>เทคนิคพื้นฐาน: เลือกคำค้นให้เป็น</a><a href="08-search.html#s3"><span class="toc-number">8.3</span>เทคนิคขั้นสูง: Search Operators</a><a href="08-search.html#s4"><span class="toc-number">8.4</span>ค้นผ่านสื่อใหม่ ๆ</a><a href="08-search.html#s5"><span class="toc-number">8.5</span>ค้นข้อมูลเชิงวิชาการ</a><a href="08-search.html#s6"><span class="toc-number">8.6</span>ค้นด้วย AI (AI-Powered Search)</a><a href="08-search.html#s7"><span class="toc-number">8.7</span>เช็กก่อนเชื่อ: CRAP Test</a><a href="08-search.html#s8"><span class="toc-number">8.8</span>ระดับของสารสนเทศ</a><a href="08-search.html#review"><span class="toc-number">💭</span>คำถามชวนคิดท้ายบท</a><a href="08-search.html#quiz"><span class="toc-number">📝</span>เก็บคะแนนท้ายชั่วโมง</a></div></details>
+<details class="nav-chapter" name="course-nav"><summary><span class="nav-number">09</span><a class="nav-title" href="09-security.html">Internet Security</a></summary><div class="nav-topics"><a href="09-security.html#s1"><span class="toc-number">9.1</span>ทำไมต้องรู้เรื่องนี้</a><a href="09-security.html#s2"><span class="toc-number">9.2</span>Internet Security และ CIA Triad</a><a href="09-security.html#s3"><span class="toc-number">9.3</span>ภัยคุกคามทางอินเทอร์เน็ต</a><a href="09-security.html#s4"><span class="toc-number">9.4</span>กรณีศึกษาจากเหตุการณ์จริง</a><a href="09-security.html#s5"><span class="toc-number">9.5</span>จับผิด Phishing</a><a href="09-security.html#s6"><span class="toc-number">9.6</span>ป้องกันบัญชี: รหัสผ่าน และ 2FA</a><a href="09-security.html#s7"><span class="toc-number">9.7</span>เครือข่าย ข้อมูล และพฤติกรรมที่ปลอดภัย</a><a href="09-security.html#s8"><span class="toc-number">9.8</span>กฎหมายที่เกี่ยวข้อง (ต่อในบทที่ 10)</a><a href="09-security.html#review"><span class="toc-number">💭</span>คำถามชวนคิดท้ายบท</a><a href="09-security.html#quiz"><span class="toc-number">📝</span>เก็บคะแนนท้ายชั่วโมง</a></div></details>
+<details class="nav-chapter" name="course-nav"><summary><span class="nav-number">10</span><a class="nav-title" href="10-law.html">กฎหมายและจริยธรรมดิจิทัล</a></summary><div class="nav-topics"><a href="10-law.html#s1"><span class="toc-number">10.1</span>พ.ร.บ.คอมพิวเตอร์ (ฉบับแก้ไข พ.ศ. 2560)</a><a href="10-law.html#s2"><span class="toc-number">10.2</span>GDPR: กฎหมายคุ้มครองข้อมูลของสหภาพยุโรป</a><a href="10-law.html#s3"><span class="toc-number">10.3</span>PDPA: พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562</a><a href="10-law.html#s4"><span class="toc-number">10.4</span>ลิขสิทธิ์และทรัพย์สินทางปัญญา</a><a href="10-law.html#s5"><span class="toc-number">10.5</span>จริยธรรมในโลกดิจิทัล</a><a href="10-law.html#s6"><span class="toc-number">10.6</span>กรณีศึกษา</a><a href="10-law.html#s7"><span class="toc-number">10.7</span>แนวทางปฏิบัติที่ดี</a><a href="10-law.html#review"><span class="toc-number">💭</span>คำถามชวนคิดท้ายบท</a><a href="10-law.html#quiz"><span class="toc-number">📝</span>เก็บคะแนนท้ายชั่วโมง</a></div></details>
+<details class="nav-chapter" name="course-nav"><summary><span class="nav-number">11</span><a class="nav-title" href="11-social.html">Social Media Literacy</a></summary><div class="nav-topics"><a href="11-social.html#s1"><span class="toc-number">11.1</span>Social Media คืออะไร</a><a href="11-social.html#s2"><span class="toc-number">11.2</span>6 ประเภทของโซเชียลมีเดีย</a><a href="11-social.html#s3"><span class="toc-number">11.3</span>ดาบสองคม: ประโยชน์และผลกระทบ</a><a href="11-social.html#s4"><span class="toc-number">11.4</span>Cyberbullying: การทำร้ายกันผ่านโลกออนไลน์</a><a href="11-social.html#s5"><span class="toc-number">11.5</span>รับมือเมื่อเจอ Cyberbullying</a><a href="11-social.html#review"><span class="toc-number">💭</span>คำถามชวนคิดท้ายบท</a><a href="11-social.html#quiz"><span class="toc-number">📝</span>เก็บคะแนนท้ายชั่วโมง</a></div></details>
+<p class="nav-label">ภาคผนวก</p>
+<details class="nav-chapter" name="course-nav"><summary><span class="nav-number">A</span><a class="nav-title" href="appendix-a-cheatsheet.html">Cheat Sheet ทางลัด</a></summary><div class="nav-topics"><a href="appendix-a-cheatsheet.html#s1"><span class="toc-number">•</span>คีย์ลัดทั่วไป</a><a href="appendix-a-cheatsheet.html#s2"><span class="toc-number">•</span>Google Docs / Slides</a><a href="appendix-a-cheatsheet.html#s3"><span class="toc-number">•</span>Google Sheets</a><a href="appendix-a-cheatsheet.html#s4"><span class="toc-number">•</span>ค้นหาขั้นสูง</a><a href="appendix-a-cheatsheet.html#s5"><span class="toc-number">•</span>Prompt AI สำเร็จรูป</a><a href="appendix-a-cheatsheet.html#s6"><span class="toc-number">•</span>เช็กลิสต์ความปลอดภัย 10 ข้อ</a><a href="appendix-a-cheatsheet.html#s7"><span class="toc-number">•</span>ตั้งชื่อไฟล์</a></div></details>
+<details class="nav-chapter" name="course-nav"><summary><span class="nav-number">B</span><a class="nav-title" href="appendix-b-course.html">เกณฑ์คะแนนและคะแนนนิสิต</a></summary><div class="nav-topics"><a href="appendix-b-course.html#scores"><span class="toc-number">•</span>คะแนนนิสิต</a><a href="appendix-b-course.html#s1"><span class="toc-number">•</span>คะแนนมาจากไหน</a><a href="appendix-b-course.html#s2"><span class="toc-number">•</span>เกณฑ์การตัดเกรด</a><a href="appendix-b-course.html#s3"><span class="toc-number">•</span>ตารางเรียน</a><a href="appendix-b-course.html#s4"><span class="toc-number">•</span>ข้อตกลงในชั้นเรียน</a><a href="appendix-b-course.html#s5"><span class="toc-number">•</span>เรียนอย่างไรให้ได้ A แบบชิล ๆ</a><a href="appendix-b-course.html#s6"><span class="toc-number">•</span>การอุทธรณ์ผลการประเมิน</a></div></details>
+<details class="nav-chapter" name="course-nav"><summary><span class="nav-number">C</span><a class="nav-title" href="appendix-c-pen.html">วิธีใช้ปากกาเขียนบนหน้าเว็บ</a></summary><div class="nav-topics"><a href="appendix-c-pen.html#s1"><span class="toc-number">•</span>เปิดใช้ปากกา</a><a href="appendix-c-pen.html#s2"><span class="toc-number">•</span>ปุ่มในแถบเครื่องมือ</a><a href="appendix-c-pen.html#s5"><span class="toc-number">•</span>กระดานทด (กระดาษเปล่า)</a><a href="appendix-c-pen.html#s3"><span class="toc-number">•</span>การบันทึกและสำรองหมึก</a><a href="appendix-c-pen.html#s4"><span class="toc-number">•</span>ข้อควรรู้</a></div></details>
+<details class="nav-chapter" name="course-nav"><summary><span class="nav-number">D</span><a class="nav-title" href="appendix-d-stats.html">สถิติผู้เข้าชม</a></summary><div class="nav-topics"><a href="appendix-d-stats.html#s1"><span class="toc-number">•</span>ผู้เข้าชมรายวัน</a><a href="appendix-d-stats.html#s2"><span class="toc-number">•</span>แยกรายบท</a><a href="appendix-d-stats.html#s3"><span class="toc-number">•</span>ดูสถิติละเอียด</a></div></details>
+</nav>
+  <figure class="side-photo"><img src="icon/prymania.jpg" alt="อ. พรทิวา ปะวะระ (อ. พราย)" width="360" height="480" loading="lazy"><figcaption>อ. พรทิวา ปะวะระ (อ. พราย)</figcaption></figure>
+  <div class="sidebar-bottom">ทักษะและชีวิตดิจิทัล (Digital Literacy) · วิชาศึกษาทั่วไป</div>
+</aside>
+<main class="lesson-main pastel" id="lesson-content">
+<div class="utility-row"><a href="index.html">← สารบัญรายวิชา</a><span class="utility-code">บทที่ 4 · สัปดาห์ที่ 4</span></div>
+<header class="lesson-header"><p class="lesson-kicker">WEEK 04 · ข้อมูลและตัวเลข</p><h1>Google Sheets</h1><p>ตาราง สูตร ฟังก์ชันสำคัญ จัดการข้อมูลนิสิต และสร้างกราฟเล่าเรื่องจากตัวเลข</p></header>
+<div class="box hook"><div class="box-t">🎬 คำถามเปิดบท</div><img class="mascot" src="icon/thinking.png" alt="" width="84" height="84" loading="lazy">
+<p>อาจารย์มีคะแนนนิสิต 300 คน ต้องรวมคะแนน ตัดเกรด นับว่าได้ A กี่คน และทำกราฟส่งภาควิชา</p>
+<p>ถ้ากดเครื่องคิดเลขทีละคน… ใช้เวลาทั้งวันและผิดแน่นอน 😵 แล้วถ้าทำได้ใน <b>5 นาที</b> ล่ะ?</p></div>
+
+<div class="objectives"><div class="box-t">🎯 เมื่อเรียนจบบทนี้ นิสิตจะสามารถ</div><ol>
+<li>เข้าใจเซลล์ ช่วงข้อมูล และการเขียนสูตรใน Google Sheets</li>
+<li>ใช้ฟังก์ชันสำคัญ เช่น SUM AVERAGE COUNTIF IF/IFS VLOOKUP</li>
+<li>จัดการข้อมูล (เรียง กรอง จัดรูปแบบตามเงื่อนไข) และสร้างกราฟที่เหมาะกับข้อมูล</li>
+</ol></div>
+
+<h2 id="s1"><span class="sec">4.1</span> รู้จักหน้าตา Sheets</h2>
+<div class="kv">
+<span>เซลล์ (Cell)</span><span>ช่องหนึ่งช่อง เรียกด้วย คอลัมน์+แถว เช่น <code>B3</code></span>
+<span>ช่วง (Range)</span><span>หลายเซลล์ติดกัน เช่น <code>B2:B31</code> (B2 ถึง B31)</span>
+<span>สูตร</span><span>ขึ้นต้นด้วย <code>=</code> เสมอ เช่น <code>=B2+C2</code> หรือ <code>=SUM(B2:D2)</code></span>
+<span>ชีต (Sheet)</span><span>แท็บด้านล่าง ไฟล์หนึ่งมีได้หลายชีต เช่น “ข้อมูลดิบ” “สรุป”</span>
+</div>
+<figure class="fig"><svg viewBox="0 0 720 300" role="img" aria-label="หน้าจอ Google Sheets พร้อมแถบสูตรและที่จับเติม">
+<rect class="bg" x="6" y="6" width="708" height="288" rx="12"/>
+<rect class="gsheets" x="20" y="18" width="24" height="30" rx="3"/><rect class="wt" x="25" y="27" width="14" height="14"/><line x1="32" y1="27" x2="32" y2="41" class="gsheets" style="stroke:#0f9d58;stroke-width:1.5"/><line x1="25" y1="34" x2="39" y2="34" style="stroke:#0f9d58;stroke-width:1.5"/>
+<text x="56" y="32" class="b">คะแนนนิสิต DL</text><text x="56" y="48" class="sm mu">ไฟล์  แก้ไข  มุมมอง  แทรก  รูปแบบ  ข้อมูล  เครื่องมือ</text>
+<rect class="bar" x="20" y="60" width="680" height="30" rx="15"/><text x="36" y="80" class="sm mu">↶ ↷ 🖨️ │ 100% ▾ │ ฿ % .0 .00 │ ค่าเริ่มต้น ▾ │ 10 ▾ │ B I │ 🔗 💬 📊 ▽ Σ</text>
+<rect class="bg" x="20" y="100" width="56" height="28" rx="4"/><text x="48" y="119" class="sm b" text-anchor="middle">G2</text>
+<text x="88" y="120" class="mu" font-style="italic">fx</text>
+<rect class="bg" x="110" y="100" width="590" height="28" rx="4"/><text x="122" y="119" class="sm mono">=SUM(C2:F2)</text>
+<g class="sm">
+<rect class="bar" x="20" y="138" width="680" height="24"/>
+<text x="38" y="155" class="mu" text-anchor="middle"> </text>
+<text x="100" y="155" class="mu" text-anchor="middle">A</text><text x="200" y="155" class="mu" text-anchor="middle">B</text><text x="290" y="155" class="mu" text-anchor="middle">C</text><text x="370" y="155" class="mu" text-anchor="middle">D</text><text x="450" y="155" class="mu" text-anchor="middle">E</text><text x="530" y="155" class="mu" text-anchor="middle">F</text><text x="630" y="155" class="mu" text-anchor="middle">G</text>
+</g>
+<rect class="sky" x="572" y="194" width="126" height="27" style="fill-opacity:.6"/>
+<g class="sm">
+<text x="38" y="184" class="mu" text-anchor="middle">1</text><text x="70" y="184" class="b">ชื่อ</text><text x="160" y="184" class="b">คณะ</text><text x="260" y="184" class="b">งาน</text><text x="340" y="184" class="b">สอบย่อย</text><text x="420" y="184" class="b">กิจกรรม</text><text x="500" y="184" class="b">ปลายภาค</text><text x="600" y="184" class="b">รวม</text>
+<text x="38" y="214" class="mu" text-anchor="middle">2</text><text x="70" y="214">มะลิ</text><text x="160" y="214">วิทยาศาสตร์</text><text x="260" y="214">46</text><text x="340" y="214">9</text><text x="420" y="214">10</text><text x="500" y="214">24</text><text x="600" y="214" class="b">89</text>
+<text x="38" y="244" class="mu" text-anchor="middle">3</text><text x="70" y="244">ต้นกล้า</text><text x="160" y="244">บัญชี</text><text x="260" y="244">38</text><text x="340" y="244">7</text><text x="420" y="244">8</text><text x="500" y="244">18</text><text x="600" y="244" class="mu">↓</text>
+<text x="38" y="274" class="mu" text-anchor="middle">4</text><text x="70" y="274">ข้าวหอม</text><text x="160" y="274">ศึกษาศาสตร์</text><text x="260" y="274">42</text><text x="340" y="274">8</text><text x="420" y="274">9</text><text x="500" y="274">20</text><text x="600" y="274" class="mu">↓</text>
+</g>
+<g class="ln"><line x1="56" y1="138" x2="56" y2="290"/><line x1="140" y1="138" x2="140" y2="290"/><line x1="245" y1="138" x2="245" y2="290"/><line x1="330" y1="138" x2="330" y2="290"/><line x1="410" y1="138" x2="410" y2="290"/><line x1="490" y1="138" x2="490" y2="290"/><line x1="570" y1="138" x2="570" y2="290"/><line x1="20" y1="192" x2="700" y2="192"/><line x1="20" y1="222" x2="700" y2="222"/><line x1="20" y1="252" x2="700" y2="252"/></g>
+<rect class="sel" x="571" y="193" width="128" height="29"/>
+<rect class="acf" x="694" y="217" width="9" height="9"/>
+<circle class="call" cx="28" cy="96" r="11"/><text class="wt sm b" x="28" y="100" text-anchor="middle">1</text>
+<circle class="call" cx="180" cy="98" r="11"/><text class="wt sm b" x="180" y="102" text-anchor="middle">2</text>
+<circle class="call" cx="680" cy="246" r="11"/><text class="wt sm b" x="680" y="250" text-anchor="middle">3</text>
+</svg><figcaption><b>ภาพที่ 4.1</b> หน้าจอ Google Sheets (ภาพจำลอง)</figcaption>
+<ol class="lg-list"><li data-n="1">ชื่อเซลล์ที่เลือกอยู่ (G2)</li><li data-n="2">แถบสูตร เห็นสูตรจริงในเซลล์</li><li data-n="3">ที่จับเติม (จุดสี่เหลี่ยม) ดับเบิลคลิกเพื่อก๊อปสูตรลงทั้งคอลัมน์</li></ol></figure>
+<div class="box tip"><div class="box-t">🪄 ลากมุมเซลล์ = ก๊อปสูตรทั้งคอลัมน์</div>
+<p>เขียนสูตรแถวแรก แล้วดับเบิลคลิกจุดสี่เหลี่ยมเล็ก ๆ มุมขวาล่างของเซลล์ สูตรจะคัดลอกลงไปจนสุดข้อมูล และเลขแถวเปลี่ยนตามให้เอง (<code>B2</code> → <code>B3</code> → <code>B4</code>…)</p></div>
+<div class="box warn"><div class="box-t">📌 อ้างอิงแบบล็อก <code>$</code> (Absolute reference)</div>
+<p>ถ้าทุกแถวต้องอ้าง “เซลล์เดิม” เช่น คะแนนเต็มที่ <code>H1</code> ให้เขียน <code>$H$1</code> ลากแล้วไม่เลื่อน · กด <kbd>F4</kbd> ขณะเลือกเซลล์ในสูตรเพื่อใส่ <code>$</code> อัตโนมัติ</p></div>
+
+<div class="box tip dl-files"><div class="box-t">📥 ไฟล์ฝึกบทนี้</div>
+<p><a href="files/sheets-practice-student-data.xlsx" download><b>sheets-practice-student-data.xlsx</b></a> — ข้อมูลสมมุติ มี 5 ชีต:</p>
+<div class="kv">
+<span>ฝึก_คะแนน</span><span>คะแนนนิสิต 40 คน เติมสูตรในช่องสีเหลือง (รวม เกรด ผ่าน/ไม่ผ่าน ตารางสรุป)</span>
+<span>เฉลย_คะแนน</span><span>สูตรครบ + จัดรูปแบบตามเงื่อนไข + กราฟ ไว้เทียบ</span>
+<span>ฝึก_VLOOKUP</span><span>พิมพ์รหัสนิสิต สูตรหาชื่อ คณะ เกรดให้เอง</span>
+<span>ผลแบบสำรวจ</span><span>คำตอบ 60 คน หน้าตาเหมือนที่ Google Forms ส่งเข้าชีต</span>
+<span>สรุปแบบสำรวจ</span><span>สรุปด้วย COUNTIF และกราฟแท่ง วงกลม กระจาย</span>
+</div>
+<p>วิธีเปิด: Google Drive → <b>ใหม่ → อัปโหลดไฟล์</b> → คลิกขวา → <b>เปิดด้วย → Google ชีต</b></p></div>
+
+<h2 id="s2"><span class="sec">4.2</span> ตัวอย่างการทำงาน: ข้อมูลนิสิต</h2>
+<p>สมมุติข้อมูลคะแนนนิสิตแบบนี้ (ลองพิมพ์ตามใน Sheets ของตัวเอง)</p>
+<div class="tbl-wrap"><table class="tbl num">
+<tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th></tr>
+<tr><th>1</th><td><b>ชื่อ</b></td><td><b>คณะ</b></td><td><b>งาน (50)</b></td><td><b>สอบย่อย (10)</b></td><td><b>ร่วมกิจกรรม (10)</b></td><td><b>ปลายภาค (30)</b></td><td><b>รวม</b></td></tr>
+<tr><th>2</th><td>มะลิ</td><td>วิทยาศาสตร์</td><td>46</td><td>9</td><td>10</td><td>24</td><td class="hot">=SUM(C2:F2)</td></tr>
+<tr><th>3</th><td>ต้นกล้า</td><td>บัญชี</td><td>38</td><td>7</td><td>8</td><td>18</td><td>71</td></tr>
+<tr><th>4</th><td>ข้าวหอม</td><td>ศึกษาศาสตร์</td><td>42</td><td>8</td><td>9</td><td>20</td><td>79</td></tr>
+<tr><th>5</th><td>ภูผา</td><td>วิทยาศาสตร์</td><td>30</td><td>5</td><td>6</td><td>12</td><td>53</td></tr>
+<tr><th>6</th><td>น้ำฝน</td><td>บัญชี</td><td>48</td><td>10</td><td>10</td><td>27</td><td>95</td></tr>
+</table></div>
+<div class="tbl-wrap"><table class="tbl">
+<tr><th>อยากรู้</th><th>สูตร</th><th>ได้</th></tr>
+<tr><td>คะแนนรวมของมะลิ</td><td><code>=SUM(C2:F2)</code></td><td>89</td></tr>
+<tr><td>ค่าเฉลี่ยคะแนนรวมทั้งห้อง</td><td><code>=AVERAGE(G2:G6)</code></td><td>77.4</td></tr>
+<tr><td>คะแนนสูงสุด / ต่ำสุด</td><td><code>=MAX(G2:G6)</code> / <code>=MIN(G2:G6)</code></td><td>95 / 53</td></tr>
+<tr><td>มีนิสิตกี่คน</td><td><code>=COUNTA(A2:A6)</code></td><td>5</td></tr>
+<tr><td>คณะบัญชีกี่คน</td><td><code>=COUNTIF(B2:B6,"บัญชี")</code></td><td>2</td></tr>
+<tr><td>ได้ 80 ขึ้นไปกี่คน</td><td><code>=COUNTIF(G2:G6,"&gt;=80")</code></td><td>2</td></tr>
+<tr><td>คะแนนเฉลี่ยของคณะวิทยาศาสตร์</td><td><code>=AVERAGEIF(B2:B6,"วิทยาศาสตร์",G2:G6)</code></td><td>71</td></tr>
+<tr><td>ผ่าน/ไม่ผ่าน (50 ขึ้นไป)</td><td><code>=IF(G2&gt;=50,"ผ่าน","ไม่ผ่าน")</code></td><td>ผ่าน</td></tr>
+</table></div>
+
+<h2 id="s3"><span class="sec">4.3</span> ฟังก์ชันตัดเกรด IF / IFS</h2>
+<p><code>IF</code> เลือกได้ 2 ทาง ถ้ามีหลายเงื่อนไขใช้ <code>IFS</code> ซึ่งจะ <b>ไล่ตรวจจากซ้ายไปขวา</b> เจอเงื่อนไขแรกที่จริงก็หยุด จึงต้องเรียงจากเกรดสูงลงต่ำ</p>
+<div class="wbox w-ifs"><div class="wbox-t">🧪 ลองสูตร IFS ตัดเกรด</div>
+<div class="wi-top"><label for="wi-score">คะแนนใน G2 =</label><input id="wi-score" type="number" value="79" min="0" max="100"><span>ผลลัพธ์ →</span><span class="wi-out">B+</span>
+<div class="wi-formula">=IFS(G2&gt;=80,"A", G2&gt;=75,"B+", G2&gt;=70,"B", G2&gt;=65,"C+", G2&gt;=60,"C", G2&gt;=55,"D+", G2&gt;=50,"D", TRUE,"F")</div></div>
+<div class="wi-rows"><span class="wi-row">≥80 A</span><span class="wi-row">≥75 B+</span><span class="wi-row">≥70 B</span><span class="wi-row">≥65 C+</span><span class="wi-row">≥60 C</span><span class="wi-row">≥55 D+</span><span class="wi-row">≥50 D</span><span class="wi-row">TRUE F</span></div>
+</div>
+
+<div class="ex" id="ex4.1"><div class="ex-head"><span class="ex-badge">กิจกรรม 4.1</span><span class="ex-title">ถ้าเรียงเงื่อนไขผิด?</span><span class="ex-level">⭐⭐ กำลังดี</span></div><div class="ex-body">ถ้าเขียน <code>=IFS(G2&gt;=50,"D", G2&gt;=80,"A", TRUE,"F")</code> แล้ว G2 = 95 จะได้เกรดอะไร เพราะอะไร
+<button type="button" class="ans-btn">ดูแนวคำตอบ</button><div class="answer"><div class="answer-t">แนวคำตอบ</div><p>ได้ <b>D</b> เพราะ IFS เจอเงื่อนไขแรก <code>G2&gt;=50</code> เป็นจริงก่อนแล้วหยุดทันที ไม่ไปถึง <code>G2&gt;=80</code> — เงื่อนไขแบบ “มากกว่าหรือเท่ากับ” ต้องเรียงจากค่ามากไปน้อย</p></div></div></div>
+
+<h2 id="s4"><span class="sec">4.4</span> สรุปฟังก์ชันสำคัญ</h2>
+<div class="tbl-wrap"><table class="tbl">
+<tr><th>กลุ่ม</th><th>ฟังก์ชัน</th><th>ทำอะไร</th></tr>
+<tr><td>คำนวณ</td><td><code>SUM</code> <code>AVERAGE</code> <code>MAX</code> <code>MIN</code> <code>ROUND(x,2)</code></td><td>รวม เฉลี่ย สูงสุด ต่ำสุด ปัดทศนิยม</td></tr>
+<tr><td>นับ</td><td><code>COUNT</code> <code>COUNTA</code> <code>COUNTIF</code> <code>COUNTIFS</code></td><td>นับตัวเลข นับช่องไม่ว่าง นับตามเงื่อนไข (หลายเงื่อนไข)</td></tr>
+<tr><td>ตามเงื่อนไข</td><td><code>SUMIF</code> <code>AVERAGEIF</code> <code>IF</code> <code>IFS</code></td><td>รวม/เฉลี่ยเฉพาะที่ตรงเงื่อนไข เลือกผลลัพธ์</td></tr>
+<tr><td>ค้นหา</td><td><code>VLOOKUP</code> <code>XLOOKUP</code></td><td>หาข้อมูลจากอีกตาราง เช่น ใส่รหัสนิสิต → ได้ชื่อ</td></tr>
+<tr><td>จัดการข้อมูล</td><td><code>SORT</code> <code>FILTER</code> <code>UNIQUE</code></td><td>เรียง กรอง ตัดตัวซ้ำ (ผลลัพธ์ล้นออกมาหลายเซลล์)</td></tr>
+<tr><td>ข้อความ</td><td><code>&amp;</code> <code>TRIM</code> <code>LEFT</code> <code>LEN</code></td><td>ต่อข้อความ ตัดช่องว่าง ตัดตัวอักษร นับความยาว</td></tr>
+</table></div>
+<div class="box cs"><div class="box-t">💻 ใช้จริงในชีวิต: VLOOKUP</div>
+<p><code>=VLOOKUP(รหัสที่หา, ตาราง, คอลัมน์ที่ต้องการ, FALSE)</code> เช่น <code>=VLOOKUP("66010123",A2:D300,2,FALSE)</code> หาชื่อจากรหัสนิสิต · ใส่ <code>FALSE</code> เสมอเพื่อหาแบบตรงตัว</p></div>
+<div class="box tip"><div class="box-t">🤖 ลืมสูตร? ถาม AI ได้</div>
+<p>พิมพ์บอก AI (หรือฟีเจอร์ Gemini ใน Sheets ถ้ามี) ว่า “คอลัมน์ G คือคะแนนรวม อยากนับคนที่ได้ 70–79 ใน Google Sheets” แล้ว <b>ลองสูตรกับข้อมูลจริงและเช็กผลด้วยตาเสมอ</b></p></div>
+
+<h2 id="s5"><span class="sec">4.5</span> จัดการข้อมูลให้อ่านง่าย</h2>
+<div class="fgrid">
+<div class="fcard"><h4>🔃 เรียง/กรอง</h4><p><b>ข้อมูล → สร้างตัวกรอง</b> กดลูกศรหัวคอลัมน์ เรียง A→Z หรือกรองเฉพาะคณะ</p></div>
+<div class="fcard"><h4>🎨 จัดรูปแบบตามเงื่อนไข</h4><p><b>รูปแบบ → การจัดรูปแบบตามเงื่อนไข</b> เช่น คะแนน &lt; 50 เป็นสีแดงอัตโนมัติ</p></div>
+<div class="fcard"><h4>📋 ตรวจสอบข้อมูล</h4><p><b>ข้อมูล → การตรวจสอบข้อมูล</b> ทำ Dropdown หรือบังคับใส่ตัวเลข 0–50 กันพิมพ์ผิด</p></div>
+<div class="fcard"><h4>❄️ ตรึงแถว</h4><p><b>มุมมอง → ตรึง → 1 แถว</b> เลื่อนลงแล้วหัวตารางยังอยู่</p></div>
+<div class="fcard"><h4>🧮 Pivot Table</h4><p><b>แทรก → ตาราง Pivot</b> สรุปข้อมูลเป็นกลุ่ม เช่น ค่าเฉลี่ยแยกคณะ ไม่ต้องเขียนสูตร</p></div>
+<div class="fcard"><h4>📥 ข้อมูลจาก Forms</h4><p>คำตอบจากบทที่ 3 ไหลเข้าชีตอัตโนมัติ — วิเคราะห์ต่อได้ทันที</p></div>
+</div>
+
+<h2 id="s6"><span class="sec">4.6</span> สร้างกราฟให้ข้อมูลเล่าเรื่อง</h2>
+<p>เลือกข้อมูล → <b>แทรก → แผนภูมิ</b> แล้วเปลี่ยนประเภทในแท็บ “ตั้งค่า” · สิ่งสำคัญคือ <b>เลือกกราฟให้ตรงคำถาม</b></p>
+<div class="tbl-wrap"><table class="tbl">
+<tr><th>อยากบอกว่า…</th><th>ใช้กราฟ</th><th>ตัวอย่าง</th></tr>
+<tr><td>เปรียบเทียบหลายกลุ่ม</td><td>📊 แท่ง (Column/Bar)</td><td>คะแนนเฉลี่ยแต่ละคณะ</td></tr>
+<tr><td>แนวโน้มตามเวลา</td><td>📈 เส้น (Line)</td><td>ผู้ใช้อินเทอร์เน็ตไทยแต่ละปี</td></tr>
+<tr><td>สัดส่วนของทั้งหมด (ไม่เกิน ~5 ส่วน)</td><td>🥧 วงกลม/โดนัท (Pie)</td><td>สัดส่วนเกรดในห้อง</td></tr>
+<tr><td>ความสัมพันธ์ 2 ตัวแปร</td><td>⚬ กระจาย (Scatter)</td><td>ชั่วโมงอ่านหนังสือ กับ คะแนนสอบ</td></tr>
+<tr><td>การกระจายของคะแนน</td><td>▥ ฮิสโทแกรม</td><td>มีกี่คนได้ 50–59, 60–69, …</td></tr>
+</table></div>
+<figure class="fig"><svg viewBox="0 0 720 300" role="img" aria-label="ตัวอย่างกราฟแท่งคะแนนเฉลี่ยแยกคณะ">
+<rect class="bg" x="6" y="6" width="708" height="288" rx="12"/>
+<text x="360" y="40" class="b lg" text-anchor="middle">คณะบัญชีได้คะแนนรวมเฉลี่ยสูงสุด</text>
+<text x="360" y="62" class="sm mu" text-anchor="middle">คะแนนรวมเฉลี่ย (เต็ม 100) แยกตามคณะ · ข้อมูลตัวอย่าง 5 คน</text>
+<g class="ln"><line x1="110" y1="250" x2="660" y2="250"/><line x1="110" y1="190" x2="660" y2="190" class="dash"/><line x1="110" y1="130" x2="660" y2="130" class="dash"/></g>
+<text x="100" y="254" class="sm mu" text-anchor="end">0</text><text x="100" y="194" class="sm mu" text-anchor="end">40</text><text x="100" y="134" class="sm mu" text-anchor="end">80</text>
+<rect x="160" y="143.5" width="100" height="106.5" rx="4" style="fill:var(--sky)"/><text x="210" y="136" class="b" text-anchor="middle">71</text><text x="210" y="272" class="sm" text-anchor="middle">วิทยาศาสตร์</text>
+<rect x="335" y="125.5" width="100" height="124.5" rx="4" style="fill:var(--coral)"/><text x="385" y="118" class="b" text-anchor="middle">83</text><text x="385" y="272" class="sm" text-anchor="middle">บัญชี</text>
+<rect x="510" y="131.5" width="100" height="118.5" rx="4" style="fill:var(--sky)"/><text x="560" y="124" class="b" text-anchor="middle">79</text><text x="560" y="272" class="sm" text-anchor="middle">ศึกษาศาสตร์</text>
+<text x="40" y="190" class="sm mu" transform="rotate(-90 40 190)" text-anchor="middle">คะแนน</text>
+</svg><figcaption><b>ภาพที่ 4.2</b> กราฟแท่งเปรียบเทียบกลุ่ม: ชื่อกราฟบอกข้อสรุป มีหน่วย และใช้สีเน้นเฉพาะแท่งที่อยากให้ดู</figcaption></figure>
+<div class="box tip"><div class="box-t">✅ กราฟที่ดี</div><ul><li>มี <b>ชื่อกราฟที่บอกข้อสรุป</b> เช่น “นิสิตที่อ่านมากกว่า 3 ชม./สัปดาห์ ได้คะแนนสูงกว่า” ดีกว่า “กราฟคะแนน”</li><li>มีชื่อแกนและหน่วย · สีไม่เยอะเกิน · ไม่ใช้ 3D ที่ทำให้อ่านค่าผิด</li></ul></div>
+
+<div class="mcq" data-ans="a"><p>อยากแสดง “จำนวนผู้ติดเชื้อไข้หวัดใหญ่รายเดือนตลอดปี” ควรใช้กราฟแบบใด?</p><div class="mcq-opts">
+<button type="button" data-k="a">กราฟเส้น</button>
+<button type="button" data-k="b">กราฟวงกลม</button>
+<button type="button" data-k="c">กราฟกระจาย</button>
+<button type="button" data-k="d">ตารางเฉย ๆ</button></div>
+<div class="mcq-why">ข้อมูลเรียงตามเวลา อยากเห็นแนวโน้มขึ้น–ลง กราฟเส้นเหมาะที่สุด</div></div>
+
+<section class="assign" id="assign"><div class="assign-head"><span class="assign-no">📌 Assignment 3</span><span class="assign-pts">15 คะแนน</span><span class="assign-kind">งานเดี่ยว</span></div><h3>วิเคราะห์ข้อมูลด้วย Google Sheets</h3>
+<p>นำข้อมูลจริงอย่างน้อย 20 แถว (แนะนำ: ผลแบบสำรวจจาก <b>Assignment 2</b> ของเราเอง หรือข้อมูลเปิดจาก <a href="https://data.go.th" target="_blank" rel="noopener">data.go.th</a>) มาวิเคราะห์ใน Google Sheets</p>
+<div class="kv">
+<span>ชีต 1 · ข้อมูล</span><span>ข้อมูลดิบ ตรึงหัวตาราง มีตัวกรอง และตรวจสอบข้อมูลอย่างน้อย 1 คอลัมน์</span>
+<span>ชีต 2 · สรุป</span><span>ใช้ฟังก์ชันอย่างน้อย 6 ชนิด (ต้องมี COUNTIF/SUMIF/AVERAGEIF 1 ชนิด และ IF/IFS 1 ชนิด) · จัดรูปแบบตามเงื่อนไข</span>
+<span>กราฟ</span><span>อย่างน้อย 2 กราฟ ต่างชนิดกัน ชื่อกราฟบอกข้อสรุป</span>
+<span>ข้อสรุป</span><span>เขียน 3–5 บรรทัดในชีต: ข้อมูลบอกอะไร และน่าจะนำไปใช้ทำอะไรต่อ</span>
+</div>
+<div class="tbl-wrap"><table class="tbl mini">
+<tr><th>เกณฑ์</th><th>คะแนน</th></tr>
+<tr><td>ข้อมูลเป็นระเบียบ และใช้เครื่องมือจัดการข้อมูล</td><td>3</td></tr>
+<tr><td>สูตรและฟังก์ชันถูกต้อง หลากหลาย</td><td>5</td></tr>
+<tr><td>กราฟเหมาะสม อ่านง่าย</td><td>4</td></tr>
+<tr><td>ข้อสรุปมีเหตุผล อ้างอิงที่มาของข้อมูล</td><td>3</td></tr>
+</table></div>
+</section>
+
+<div class="box hook"><div class="box-t">🎬 กลับมาตอบคำถามเปิดบท</div><img class="mascot" src="icon/you-did-it.png" alt="" width="84" height="84" loading="lazy">
+<p>เขียน <code>=SUM()</code> และ <code>=IFS()</code> แถวเดียว ดับเบิลคลิกลากลง 300 แถวเสร็จในวินาทีเดียว <code>COUNTIF</code> นับ A ให้ และแทรกกราฟอีก 1 คลิก — 5 นาทีจริง ๆ และไม่มีกดเครื่องคิดเลขผิด</p></div>
+
+<section class="review" id="review"><h2>คำถามชวนคิดท้ายบท <span class="chip o">ไม่มีคะแนน</span></h2><p class="review-note">คุยกับเพื่อนข้าง ๆ หรือคิดในใจก่อน แล้วค่อยกด “ดูแนวคำตอบ” — คำตอบของเราอาจดีกว่าแนวคำตอบก็ได้</p><div class="review-actions"><button type="button" class="review-key">ดูแนวคำตอบ</button><button type="button" class="review-copy">คัดลอกคำถามทั้งหมด</button></div><ol>
+<li class="part g1">ทบทวน</li>
+<li class="g1"><code>=COUNT(A2:A10)</code> กับ <code>=COUNTA(A2:A10)</code> ต่างกันอย่างไร<div class="rv-ans">COUNT นับเฉพาะเซลล์ที่เป็นตัวเลข COUNTA นับทุกเซลล์ที่ไม่ว่าง (รวมข้อความ)</div></li>
+<li class="g1">เขียนสูตรนับจำนวนนิสิตที่ได้คะแนนรวมต่ำกว่า 50 จากช่วง G2:G31<div class="rv-ans"><code>=COUNTIF(G2:G31,"&lt;50")</code></div></li>
+<li class="g1">ทำไมต้องใช้ <code>$H$1</code> แทน <code>H1</code> ในบางสูตร<div class="rv-ans">เพื่อล็อกให้อ้างเซลล์เดิมเสมอเมื่อลาก/คัดลอกสูตรไปแถวอื่น</div></li>
+<li class="part g2">คิดต่อ</li>
+<li class="g2">กราฟวงกลมที่มี 15 ส่วน มีปัญหาอะไร ควรเปลี่ยนเป็นอะไร<div class="rv-ans">ชิ้นเล็กเกินแยกไม่ออก สีเยอะ เปรียบเทียบยาก ควรใช้กราฟแท่งเรียงจากมากไปน้อย หรือรวมกลุ่มเล็ก ๆ เป็น “อื่น ๆ”</div></li>
+</ol></section>
+
+<nav class="lesson-pager" aria-label="บทก่อนหน้าและถัดไป"><a class="pager-link secondary" href="03-forms.html">← Google Forms</a><a class="pager-link" href="05-presentation.html">Presentation →</a></nav>
+<footer class="lesson-footer">ทักษะและชีวิตดิจิทัล (Digital Literacy) · Digital Literacy by Prymania · มหาวิทยาลัยมหาสารคาม</footer>
+</main>
+</div>
+<script defer src="assets/nav.js"></script>
+<script defer src="assets/dl.js"></script>
+<script defer src="assets/ink.js"></script>
+<script>window.goatcounter={path:function(p){return p.replace(/\/index\.html$/,"/")}}</script>
+<script data-goatcounter="https://prymania-ge.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

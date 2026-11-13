@@ -1,0 +1,12 @@
+# สำเนาไฟล์ที่หลุดมาอยู่รากโปรเจกต์ (ตัวจริงอยู่ใน docs/files/)
+/*.docx
+/*.pptx
+/*.xlsx
+/*.gs
+*.pdf
+# ไฟล์ระบบ
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
+__pycache__/
